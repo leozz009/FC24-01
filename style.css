@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #585858;
+}
+
+/* navegacion */
+.navegacion{
+    display: flex;
+    justify-content: space-between ;
+    padding: 15px;
+    align-items: center;
+    height: 85px;
+    padding: 5px 6%;
+    background-color: #07f468;
+}
+
+/* estilo logo */
+
+.navegacion .ealogo img{
+    height: 85px;
+    width: auto;
+    transition: all 0.3s ease 0s;
+}
+
+.navegacion .elementos-navegacion li{
+    display: inline-block;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.navegacion .elementos-navegacion a{
+    font-family: 'Koulen', sans-serif;
+    font-size: 15px;
+    color:#161616;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+
+@media(max-width: 1000px){
+    .navegacion .elementos-navegacion a{
+        padding: 0;
+        font-size: 12px;
+        display: flex;
+    }
+}
+
+@media(max-width: 492px){
+    .navegacion .ealogo img {
+        width: 70px;
+        height: auto;
+    }
+}
+
+.navegacion .boton button{
+    font-family: 'Koulen', sans-serif;
+    font-weight: 600;
+    color: #161616;  
+    background: #DDF0C2;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+/* Transiciones */
+.navegacion .boton button:hover{
+    transform: scale(1.2); 
+}
+
+.navegacion .elementos-navegacion li:hover{
+    transform: scale(1.2);
+}
+
+.navegacion .ealogo img:hover{
+    transform: scale(1.2);
+}
+
+
+/* Imagen principal */
+.contenedor-presentacion .imagen-principal img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Subtitulos */
+.subtitulo-h2{
+    font-family: 'Koulen', sans-serif;
+    font-size: 65px;
+    color:#fff; 
+    text-align: center;
+    margin-top: 35px;
+    text-shadow: 4px 4px 5px #0005;
+}
+
+@media(max-width: 1000px){
+    .subtitulo-h2{
+        font-size: 45px;
+    }
+}
+
+
+/* Tablas de contenido */
+
+.tabla-contenido{
+    padding: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 35px; 
+}
+
+
+.boton-tabla{
+    background-color: #07f468;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;  
+    margin-top: 20px;
+}
+
+.tabla{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.lista-tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.titulo-tabla{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.extra-tabla{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #07f468
+}
+
+@media(max-width: 1300px){
+    .tabla-contenido{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tabla{
+        margin-bottom: 20px;
+    }
+
+    .lista-tabla{
+        flex-direction: row;
+    }
+
+    .boton-tabla{
+        margin-top: 20px;
+    }
+}
+
+.subtitulo-h2{
+    padding-bottom: 45px;
+}
+
+/* Ronaldo */
+.div-ronaldo{
+    display: flex;
+}
+
+/* Seccion cartas juego */
+
+.cartas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.ratings{
+    transform: translateY(-160%);
+    width: 50%;
+    padding-left: 5%;
+}
+
+.mejores-cartas {
+    background-color: #161616;
+}
+
+/* Seccion del footer */
+
+.pie-web{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    height: 85px;
+    padding: 5px 6%;
+    background-color: #07f468;
+}
+
+.pie-web .elementos-pieWeb li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.pie-web .elementos-pieWeb a {
+    font-family: 'Koulen', sans-serif;
+    font-size: 15px;
+    color:#161616;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px; 
+}
